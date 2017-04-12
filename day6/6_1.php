@@ -19,7 +19,7 @@ foreach($lines as $line) {
 }
 
 for($i=0;$i<sizeof($data);$i++) {
-  array_multisort(array_values($data[$i]), SORT_DESC, array_keys($data[$i]), SORT_ASC, $data[$i]);
+  array_multisort(array_values($data[$i]), SORT_ASC, array_keys($data[$i]), SORT_ASC, $data[$i]);
 }
 
 foreach($data as $list){
